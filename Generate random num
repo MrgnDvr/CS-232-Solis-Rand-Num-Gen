@@ -1,0 +1,50 @@
+
+#include<iostream>
+#include<ctime> //used for time(0)
+using namespace std;
+int main() {
+//declarations
+int lowerBound;
+int upperBound;
+int randNum;
+char tryAgain = 'y';
+//get user input
+cout << "What is the lower bound: ";
+cin >> lowerBound;
+cout << "What is the upper bound: ";
+cin >> upperBound;
+//calculation
+srand(time(0)); //initializes random seed
+while (tryAgain == 'y' || tryAgain == 'Y') {
+randNum = rand() % (upperBound - lowerBound + 1) + lowerBound;
+cout << "Random number generated: " << randNum << endl;
+cout << "Try again: ";
+cin >> tryAgain;
+}
+//system("pause");
+return 0;
+}#include<iostream>
+#include<ctime> //used for time(0)
+using namespace std;
+int main() {
+//declarations
+int lowerBound;
+int upperBound;
+int randNum;
+char tryAgain = 'y';
+//get user input
+cout << "What is the lower bound: ";
+cin >> lowerBound;
+cout << "What is the upper bound: ";
+cin >> upperBound;
+//calculation
+srand(time(0)); //initializes random seed
+while (tryAgain == 'y' || tryAgain == 'Y') {
+randNum = rand() % (upperBound - lowerBound + 1) + lowerBound;
+cout << "Random number generated: " << randNum << endl;
+cout << "Try again: ";
+cin >> tryAgain;
+}
+//system("pause");
+return 0;
+}
